@@ -10,4 +10,6 @@ export default async function handler(req, res) {
     res.status(200).send(response.data);
   } catch (error) {
     // 错误处理
-    res.status(
+    res.status(500).send('Failed to fetch the XML file.');
+  }
+}
