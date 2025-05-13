@@ -3,7 +3,7 @@ import axios from 'axios';
 export default async function handler(req, res) {
   try {
     // 从 GitHub 拉取 m3u 文件内容
-    const response = await axios.get('https://raw.githubusercontent.com/mil0li/whataghost/refs/heads/main/en/videoall.m3u');
+    const response = await axios.get('https://raw.githubusercontent.com/mikekaprielian/rtnaodhor93n398/refs/heads/main/en/videoall.m3u');
     
     // 设置响应头，返回 m3u 文件
     res.setHeader('Content-Type', 'application/x-mpegURL');
